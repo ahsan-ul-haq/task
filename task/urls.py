@@ -21,5 +21,5 @@ from backend.views import UserInfoView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', UserInfoView.as_view(), name='user_info'),
-    url(r'^save/', include('backend.urls')),
+    url(r'^api/', include('backend.api.urls')),
 ]
