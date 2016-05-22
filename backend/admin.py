@@ -1,3 +1,6 @@
+"""
+Admin configuration to display and save UserInfo on admin panel.
+"""
 from django.contrib import admin
 
 from backend.models import UserInfo

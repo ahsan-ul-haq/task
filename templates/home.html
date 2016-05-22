@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+
+<h3>User Info</h3>
+<form role="form" method="POST" action="/save/">
+    {% csrf_token %}
+    <div>
+        <div>
+            <label>{{ form.name.label }}
+                {{  form.name }}
+            </label>
+            <input type="submit" value="Submit"/>
+            <span > {{ form.name.errors }} </span>
+        </div>
+    </div>
+</form>
+</body>
+</html>
